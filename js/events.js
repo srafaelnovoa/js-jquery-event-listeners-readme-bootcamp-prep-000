@@ -26,14 +26,13 @@ function frameIt(){
 function pressIt() {
   $('#typing').on("keydown",function(e){
       if (e || window.event)
-  {
-   
-  console.log(e.which)
-  if (parseInt(e.which)===71){
-      window.alert("G");
-  }
-  }
-  });
-
-return 
+      {
+        console.log(e.which)
+        if (parseInt(e.which)===71){
+          window.alert("G");
+        }
+      }
+      });
 }
+
+pressIt();
