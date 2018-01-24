@@ -24,21 +24,16 @@ function frameIt(){
 }
 
 function pressIt() {
-  $('#typing').on("keydown",function(){
-    
-  });
-   //key = parseInt(e.which);
-   //console.log(this)
-  //var key = window.event;
-  if (e || window.event)
+  $('#typing').on("keydown",function(e){
+      if (e || window.event)
   {
    
-  //console.log(window.event)
   console.log(e.which)
   if (parseInt(e.which)===71){
       window.alert("G");
-    
   }
   }
+  });
+
 return 
 }
