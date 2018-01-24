@@ -5,7 +5,6 @@ $(document).ready(function(){
 // call functions here
 $('p').on("click",getIt);
 $('img').on("load",frameIt());
-$('#typing').on("keydown",pressIt);
 $('form').on("submit",submitIt);
 
 });
@@ -24,7 +23,10 @@ function frameIt(){
   return 
 }
 
-function pressIt(e) {
+function pressIt() {
+  $('#typing').on("keydown",function(){
+    
+  });
    //key = parseInt(e.which);
    //console.log(this)
   //var key = window.event;
